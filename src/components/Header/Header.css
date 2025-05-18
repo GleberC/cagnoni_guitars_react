@@ -1,0 +1,73 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .cagnoni_logo {
+    margin-top: 2rem;
+    padding: .3rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--Pewter);
+    box-shadow: var(--Olive-Green) 0px 5px 15px;
+  }
+  
+  .menu_principal {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Quebra os itens em duas linhas no mobile */
+    background-color: var(--Yellow-Green);
+    border-radius: .2rem;
+    padding: 0.5rem 1rem;
+    gap: .5rem;
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+  
+  /* Para garantir que todos os links tenham a cor correta e o estilo desejado */
+  a {
+    color: var(--Olive-Green) !important;  /* Força a cor */
+    font-family: var(--font-main) !important;
+    font-weight: 400 !important;
+    text-decoration: none !important;      /* Remove sublinhado, se necessário */
+    gap: .5rem;
+  }
+    
+  /* Para garantir que os links dentro de itens de menu sejam estilizados corretamente */
+   .p-menu__item a {
+     
+    color: var(--Olive-Green);
+    font-weight: 400;
+    text-decoration: none;
+  } 
+  
+  
+  @media (min-width: 768px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+  
+    .cagnoni_logo {
+      margin-top: 0;
+    }
+  
+    .dog {
+      display: block;
+    }
+  
+    .menu_principal {
+       
+      gap: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .p-menu__item {
+        font-size: 14px;
+        padding: 0.5rem 0.75rem;
+      }
+  }
+  

@@ -1,0 +1,14 @@
+footer{
+    font-family: var(--font-main);
+    font-size: small;
+   color: var(--Sage-Green);
+    text-shadow: 1px 1px 2px var(--Olive-Green);
+    padding: 1rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    footer {
+      font-size: 1rem;
+    }
+  }
+  

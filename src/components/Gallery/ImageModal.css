@@ -1,0 +1,74 @@
+/* Estilização do fundo do modal */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:var(--Olive-Green); /* fundo escurecido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Conteúdo do modal */
+  .modal-content {
+    position: relative;
+    background-color:var(--Pewter);
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    text-align: center;
+    box-shadow: 0 0 15px var(--Pewter);
+  }
+  
+  /* Botão de fechar */
+  .close {
+    position: absolute;
+    top: 0.5rem;
+    right: .5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--Olive-Green-light);
+    cursor: pointer;
+  }
+  
+  /* Imagem dentro do modal */
+  .modal-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Descrição da imagem */
+  .modal-content p {
+    color: var(--Olive-Green);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .modal-content {
+      padding: 1rem;
+      border-radius: 8px;
+      max-width: 50%;
+      height: auto;
+  }
+  .modal-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  }
