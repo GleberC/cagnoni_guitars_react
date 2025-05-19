@@ -22,7 +22,7 @@ function Gallery({ blocoId }) {
     setModalAberto(false);
     setImagemSelecionada(null);
   };
-
+  console.log(imagensFiltradas)
   return (
     <div className="gallery">
       {imagensFiltradas.map((imagem) => (
