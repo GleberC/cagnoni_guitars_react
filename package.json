@@ -1,7 +1,7 @@
 {
   "name": "cagnoni-guitars-react",
   "private": true,
-  "homepage": "https://GleberC.github.io/cagnoni-guitars",
+  "homepage": "https://GleberC.github.io/cagnoni_guitars_react/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
